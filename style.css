@@ -34,7 +34,7 @@ body {
     justify-content: space-between;
     border-radius: 100px 20px 20px 100px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    animation: animate 10s linear infinite;
+    animation: animate 15s linear infinite;
     animation-delay: calc(3s * var(--delay));
 }
 
@@ -57,7 +57,7 @@ body {
         transform: translateY(100%) scale(0.7);
     }
 
-    20%, 40% {
+    25%, 40% {
         opacity: 1;
         transform: translateY(0%) scale(1);
         pointer-events: auto;
@@ -99,5 +99,23 @@ body {
 }
 
 .card .details {
-    
+    margin-left: 80px;
+}
+
+.details span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #833bef 0%, #2e68a2 100%);
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transition: scale(0.94);
 }
